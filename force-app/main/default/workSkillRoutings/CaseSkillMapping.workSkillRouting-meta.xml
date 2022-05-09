@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkSkillRouting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <masterLabel>Case Skill Mapping</masterLabel>
+    <relatedEntity>Case</relatedEntity>
+    <workSkillRoutingAttributes>
+        <field>Case.Reason</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>TechIssuesResolution</skill>
+        <skillLevel>6</skillLevel>
+        <value>Installation</value>
+    </workSkillRoutingAttributes>
+</WorkSkillRouting>
