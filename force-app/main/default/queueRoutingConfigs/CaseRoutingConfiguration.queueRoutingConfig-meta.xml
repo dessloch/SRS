@@ -5,4 +5,10 @@
     <label>Case Routing Configuration</label>
     <routingModel>MOST_AVAILABLE</routingModel>
     <routingPriority>1</routingPriority>
+    <skills>
+        <skill>TechIssuesResolution</skill>
+    </skills>
+    <skills>
+        <skill>English</skill>
+    </skills>
 </QueueRoutingConfig>

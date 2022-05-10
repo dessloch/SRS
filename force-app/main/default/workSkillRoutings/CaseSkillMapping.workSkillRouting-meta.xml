@@ -5,9 +5,10 @@
     <relatedEntity>Case</relatedEntity>
     <workSkillRoutingAttributes>
         <field>Case.Reason</field>
-        <isAdditionalSkill>false</isAdditionalSkill>
+        <isAdditionalSkill>true</isAdditionalSkill>
         <skill>TechIssuesResolution</skill>
         <skillLevel>6</skillLevel>
+        <skillPriority>1</skillPriority>
         <value>Installation</value>
     </workSkillRoutingAttributes>
 </WorkSkillRouting>
