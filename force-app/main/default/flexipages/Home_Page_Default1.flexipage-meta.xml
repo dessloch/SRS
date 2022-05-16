@@ -13,6 +13,13 @@
                 </componentInstanceProperties>
                 <componentName>utilityDataTable</componentName>
                 <identifier>c_utilityDataTable1</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
