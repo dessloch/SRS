@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ContactConfiguration</label>
+    <protected>false</protected>
+    <values>
+        <field>ColumnsConfiguration__c</field>
+        <value xsi:type="xsd:string">[
+{
+&quot;label&quot;: &quot;Name&quot;,
+&quot;fieldName&quot;: &quot;urlLink&quot;,
+&quot;type&quot;: &quot;url&quot;,
+&quot;sortable&quot;: true,
+&quot;typeAttributes&quot;: {&quot;label&quot;: {&quot;fieldName&quot;: &quot;Name&quot;}, &quot;target&quot;: &quot;_blank&quot;}
+},
+    { &quot;label&quot;: &quot;Title&quot;, &quot;fieldName&quot;: &quot;Title&quot;, &quot;type&quot;: &quot;text&quot;, &quot;sortable&quot;: &quot;true&quot;},
+    { &quot;label&quot;: &quot;Phone&quot;, &quot;fieldName&quot;: &quot;Phone&quot;, &quot;type&quot;: &quot;phone&quot;, &quot;sortable&quot;: &quot;true&quot;},
+    { &quot;label&quot;: &quot;Email&quot;, &quot;fieldName&quot;: &quot;Email&quot;, &quot;type&quot;: &quot;email&quot;, &quot;sortable&quot;: &quot;true&quot;}
+]</value>
+    </values>
+    <values>
+        <field>FieldAPINames__c</field>
+        <value xsi:type="xsd:string">Name, Title, Phone, Email</value>
+    </values>
+    <values>
+        <field>FilteringString__c</field>
+        <value xsi:type="xsd:string">AccountId != null</value>
+    </values>
+    <values>
+        <field>SortingString__c</field>
+        <value xsi:type="xsd:string">Title ASC</value>
+    </values>
+    <values>
+        <field>sObjectAPIName__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+</CustomMetadata>

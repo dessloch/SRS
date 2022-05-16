@@ -1,0 +1,39 @@
+<template>
+    <div if:true={showSpinner}>
+        <div class="spinner-div slds-is-relative">
+            <lightning-spinner variant="brand"
+                               alternative-text="Loading"
+                               size="Medium">
+            </lightning-spinner>
+        </div>
+    </div>
+    <div if:false={showSpinner} class="slds-box">
+        <div if:false={enableLazyLoading}>
+            <div class="slds-p-around_medium">
+                <lightning-input label="" type="search" placeholder="Search" variant="label-hidden"
+                                 onchange={handleChange}></lightning-input>
+            </div>
+        </div>
+        <div class="table-print" style={datatableHeight}>
+            <lightning-datatable
+                    key-field="id"
+                    data={records}
+                    columns={columns}
+                    onsort={handleSort}
+                    sorted-by={sortBy}
+                    sorted-direction={sortDirection}
+                    hide-checkbox-column
+                    enable-infinite-loading={isLazyLoadingEnabled}
+                    onloadmore={loadMoreData}>
+            </lightning-datatable>
+        </div>
+        <div class="pdf-button slds-p-around_small">
+            <lightning-button
+                    class="slds-float_right"
+                    label={label.saveAsPDF}
+                    onclick={downloadAsPdf}
+                    variant="brand">
+            </lightning-button>
+        </div>
+    </div>
+</template>

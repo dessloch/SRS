@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case Config</label>
+    <protected>false</protected>
+    <values>
+        <field>ColumnsConfiguration__c</field>
+        <value xsi:type="xsd:string">[
+            {
+                &quot;label&quot;: &quot;Case Number&quot;,
+                &quot;fieldName&quot;: &quot;urlLink&quot;,
+                &quot;type&quot;: &quot;url&quot;,
+                &quot;sortable&quot;: true,
+                &quot;typeAttributes&quot;: {&quot;label&quot;: {&quot;fieldName&quot;: &quot;CaseNumber&quot;}, &quot;target&quot;: &quot;_blank&quot;}
+            },
+            {
+                &quot;label&quot;: &quot;Case Reason&quot;,
+                &quot;fieldName&quot;: &quot;Reason&quot;,
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;sortable&quot;: true
+            },
+            {
+                &quot;label&quot;: &quot;Owner&quot;,
+                &quot;fieldName&quot;: &quot;OwnerId&quot;,
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;sortable&quot;: true
+            }
+]</value>
+    </values>
+    <values>
+        <field>FieldAPINames__c</field>
+        <value xsi:type="xsd:string">CaseNumber, Reason, OwnerId</value>
+    </values>
+    <values>
+        <field>FilteringString__c</field>
+        <value xsi:type="xsd:string">Id != null</value>
+    </values>
+    <values>
+        <field>SortingString__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>sObjectAPIName__c</field>
+        <value xsi:type="xsd:string">Case</value>
+    </values>
+</CustomMetadata>
